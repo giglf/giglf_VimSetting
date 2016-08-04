@@ -1,0 +1,68 @@
+set nocompatible
+filetype off
+
+set encoding=utf-8
+set showmatch
+set number
+set cursorline
+set ruler
+set tabstop=4
+set shiftwidth=4
+set softtabstop=4
+set autoindent
+set laststatus=2
+let g:airline_theme = "luna"
+let g:airline_powerline_fonts = 1 
+let g:ycm_global_ycm_extra_conf='~/.vim/bundle/YouCompleteMe/third_party/ycmd/cpp/ycm/.ycm_extra_conf.py'
+
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+"python
+Plugin 'vim-scripts/indentpython.vim'
+Plugin 'klen/python-mode'
+Plugin 'yssource/python.vim'
+Plugin 'python_match.vim'
+Plugin 'pythoncomplete'
+"
+
+"javascript
+Plugin 'elzr/vim-json'
+Plugin 'groenewege/vim-less'
+Plugin 'pangloss/vim-javascript'
+Plugin 'briancollins/vim-jst'
+Plugin 'kchmck/vim-coffee-script'
+"
+"HTML
+Plugin 'amirh/HTML-AutoCloseTag'
+Plugin 'hail2u/vim-css3-syntax'
+Plugin 'gorodinskiy/vim-coloresque'
+Plugin 'tpope/vim-haml'
+Plugin 'mattn/emmet-vim'
+"
+"Markdown
+Plugin 'tpope/vim-markdown'
+"
+
+"general
+Plugin 'jiangmiao/auto-pairs'
+Plugin 'vim-airline/vim-airline'
+Plugin 'vim-airline/vim-airline-themes'
+Plugin 'vim-scripts/OmniCppComplete'
+Plugin 'scrooloose/nerdtree'
+Plugin 'scrooloose/syntastic'
+Plugin 'wakatime/vim-wakatime'
+Plugin 'KabbAmine/zeavim.vim', {'on': [
+            \   'Zeavim',
+            \   '<Plug>Zeavim',
+            \   '<Plug>ZVVisSelection',
+            \   '<Plug>ZVKeyDocset',
+            \   '<Plug>ZVMotion'
+            \ ]}
+Plugin 'Valloric/YouCompleteMe'
+"
+call vundle#end()
+filetype plugin indent on
+
