@@ -1,10 +1,12 @@
+ 
 set nocompatible
 filetype off
 
+syntax on
+set backspace=indent,eol,start
 set encoding=utf-8
 set showmatch
 set number
-set cursorline
 set ruler
 set tabstop=4
 set shiftwidth=4
@@ -28,23 +30,6 @@ Plugin 'python_match.vim'
 Plugin 'pythoncomplete'
 "
 
-"javascript
-Plugin 'elzr/vim-json'
-Plugin 'groenewege/vim-less'
-Plugin 'pangloss/vim-javascript'
-Plugin 'briancollins/vim-jst'
-Plugin 'kchmck/vim-coffee-script'
-"
-"HTML
-Plugin 'amirh/HTML-AutoCloseTag'
-Plugin 'hail2u/vim-css3-syntax'
-Plugin 'gorodinskiy/vim-coloresque'
-Plugin 'tpope/vim-haml'
-Plugin 'mattn/emmet-vim'
-"
-"Markdown
-Plugin 'tpope/vim-markdown'
-"
 
 "general
 Plugin 'jiangmiao/auto-pairs'
@@ -53,14 +38,6 @@ Plugin 'vim-airline/vim-airline-themes'
 Plugin 'vim-scripts/OmniCppComplete'
 Plugin 'scrooloose/nerdtree'
 Plugin 'scrooloose/syntastic'
-Plugin 'wakatime/vim-wakatime'
-Plugin 'KabbAmine/zeavim.vim', {'on': [
-            \   'Zeavim',
-            \   '<Plug>Zeavim',
-            \   '<Plug>ZVVisSelection',
-            \   '<Plug>ZVKeyDocset',
-            \   '<Plug>ZVMotion'
-            \ ]}
 Plugin 'Valloric/YouCompleteMe'
 "
 call vundle#end()
